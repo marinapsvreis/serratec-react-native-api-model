@@ -1,0 +1,21 @@
+INSERT INTO categoria (NOME_CATEGORIA,IMAGEM) VALUES
+     ('Camisas','https://i.imgur.com/qsnPuHw.png'),
+     ('Calças','https://i.imgur.com/4oDW0hl.png'),
+     ('Bermudas & Shorts','https://i.imgur.com/XxrWdOt.png'),
+     ('Casacos','https://i.imgur.com/3GCfWOi.png'),
+     ('Calçados','https://i.imgur.com/igr7jlQ.png');
+INSERT INTO estoque (ID_PRODUTO,QUANTIDADE) VALUES
+	 (1,10),
+	 (3,30);
+INSERT INTO fornecedor (TIPO,RAZAO_SOCIAL,CNPJ,UF,TELEFONE,EMAIL,NOME_FANTASIA,STATUS_SITUACAO,BAIRRO,LOGRADOURO,NUMERO,COMPLEMENTO,CEP,MUNICIPIO,DATA_ABERTURA) VALUES
+	 ('Matriz','Primeiro Fornecedor','01111222000100','RJ','2125874125','email@mail.com','Nome Fantasia','Ativo','Centro','Rua Principal',10,'','25600000','Petrópolis','2022-05-27 09:23:36.461');
+INSERT INTO perfil (NOME_PERFIL) VALUES
+	 ('ROLE_USER');
+INSERT INTO produto (SKU,NOME_PRODUTO,ID_FORNECEDOR,ID_CATEGORIA,IMAGEM_PRODUTO,PRECO_PRODUTO,DESCRICAO_PRODUTO) VALUES
+     ('C1','Camiseta Star Wars',1,1,'https://i.imgur.com/ll1Fgke.jpg',80.0,'Camisa Geek Tema StarWars'),
+     ('CL1','Calça Sarja',1,2,'https://i.imgur.com/FjOW4d7.jpg', 120.0, 'Calça Sarja na cor Caqui'),
+     ('BM1','Bermuda Azul',1,3,'https://i.imgur.com/0rWqIbC.jpg', 75.0, 'Bermuda Cargo Azul');
+INSERT INTO usuario (NOME_USUARIO,EMAIL,SENHA) VALUES
+	 ('usuario','usuario@mail.com','$2a$12$3COb/LHNYO/JeLWy1ExGFe6U2iyFczP70/kBUEHbf9miQ4Vp64A42');
+INSERT INTO usuario_rel_perfil (ID_USUARIO,ID_PERFIL) VALUES
+	 (1,1);
